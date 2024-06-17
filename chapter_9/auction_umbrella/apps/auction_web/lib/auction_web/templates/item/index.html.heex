@@ -1,0 +1,7 @@
+<ul>
+  <%= for item <- @items do %>
+    <li>
+      <strong><.link href={~p"/items/#{item.id}"} method="get"><%= item.title %></.link></strong> - <%= item.description %>
+    </li>
+  <% end %>
+</ul>
